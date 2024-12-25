@@ -1,0 +1,58 @@
+templates:
+  estimate1:
+    file: templates/output_template1.xlsx
+    fields:
+      estimate_number: N4          #見積書番号
+      issue_date: N5               #発行日
+      issuer: M3                   # 発行者
+      person_in_charge: M13        # 担当者
+      customer_name: B4            # 顧客名
+      customer_representative: B10 # 顧客担当者
+      customer_address: B5         # 顧客住所
+    detail:
+      start_row: 16               # 明細データの開始行
+      columns:
+        no: A                    # No.
+        item_name: B             # 項目
+        quantity: J              # 数量
+        unit: K                  # 単位
+        unit_price: L            # 単価
+        total_price: O           # 金額
+
+  estimate2:
+    file: templates/output_template2.xlsx
+    fields:
+      estimate_number: W2          #見積書番号
+      issue_date: W3               #発行日
+      issuer: U6                   # 発行者
+      person_in_charge: U8        # 担当者
+      customer_name: B5            # 顧客名
+      customer_representative: B6 # 顧客担当者
+      customer_address: B3         # 顧客住所
+    detail:
+      start_row: 17               # 明細データの開始行
+      columns:                   
+        item_name: B             # 項目
+        quantity: L              # 数量
+        unit: N                  # 単位
+        unit_price: O            # 単価
+        total_price: R           # 金額
+  
+  estimate3:
+    file: templates/output_template3.xlsx
+    fields:
+      estimate_number: P4          #見積書番号
+      issue_date: P5               #発行日
+      issuer: M7                   # 発行者
+      person_in_charge: N14        # 担当者
+      customer_name: B4            # 顧客名
+      customer_representative: C5 # 顧客担当者
+    detail:
+      start_row: 20               # 明細データの開始行
+      columns:
+        no: B                    # No.                   
+        item_name: C             # 項目
+        quantity: L              # 数量
+        unit: M                  # 単位
+        unit_price: N            # 単価
+        total_price: P           # 金額
