@@ -17,14 +17,6 @@ foreach ($tests as $test) {
     echo '<td>' . $test[2] . '</td>';
     echo '<td>' . $test[3] . '</td>';
     echo '<td>' . $test[4] . '</td>';
-    // echo '<td>' . $test[5] . '</td>';
-    // echo '<td>' . $test[6] . '</td>';
-    // echo '<td>' . $test[7] . '</td>';
-    //★★★↓一行ごとのExcel出力する機能
-    // echo '<td><form action="detail_output.php" method="post"> 
-    // <input type="hidden" name="line" value='.$count.'>
-    // <button type="submit">Excel出力'.($count+1).'</button></form></td></tr>';
-    // $count++;
     echo '<td><form action="detail.php" method="post"> 
     <input type="hidden" name="line" value=' . $count . '>
     <button type="submit">詳細データ' . ($count + 1) . '</button></form></td></tr>';

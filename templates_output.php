@@ -5,12 +5,7 @@ require 'vendor/autoload.php';
 require 'testdata.php';
 require 'excel_output.php';
 
-use exceloutput\Foo;//
-
-// use PhpOffice\PhpSpreadsheet\IOFactory;
-// use Symfony\Component\Yaml\Yaml;
-// use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-
+use exceloutput\Foo;
 
 try {
     // YAML設定ファイルを読み込む
@@ -34,7 +29,7 @@ try {
     // テンプレートにデータを埋め込む
     //$manager->fillTemplate('estimate', $data);
 
-    Foo::fillTemplate($manager,$selectedTemplate, $data);
+    Foo::fillTemplateOutput($manager,$selectedTemplate, $data);
 
 
 
