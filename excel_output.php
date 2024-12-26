@@ -61,7 +61,7 @@ class Foo
 
     }
     //////////////////////////////////////////////////////////////
-    public static function freedetailExcelOutput(array $headerData, array $detailheader, array $detailData) //見積詳細データをexcelに出力する関数(項目を含めた詳細データ,明細データの項目,明細データ)
+    public static function freeDetailExcelOutput(array $headerData, array $detailheader, array $detailData) //見積詳細データをexcelに出力する関数(項目を含めた詳細データ,明細データの項目,明細データ)
     {
         // スプレッドシート作成
         $spreadsheet = new Spreadsheet();
@@ -119,7 +119,7 @@ class Foo
     }
 
     //////////////////////////////////////////////////////////////
-    public static function fillTemplate($yamlFile, $templateName, $data) //テンプレートファイルに出力する関数(使用するymlファイル,使用するテンプレートファイル,詳細明細データ)
+    public static function fillTemplateOutput($yamlFile, $templateName,array $data) //テンプレートファイルに出力する関数(使用するymlファイル,使用するテンプレートファイル,詳細明細データ)
     {
 
         // var_dump($yamlFile, $templateName, $data);//デバック
@@ -176,7 +176,7 @@ class Foo
         $writer->save($temp_file);
 
         // 出力バッファをクリアしてからダウンロードヘッダーの設定
-        ob_end_clean(); // 重要
+        ob_end_clean();
 
         // ダウンロード用ヘッダーの設定
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');

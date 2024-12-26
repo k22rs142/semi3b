@@ -24,4 +24,4 @@ $headerData = [
 $detailheader = ['番号', '品名', '数量', '単位', '単価', '合計'];
 $detailData = $tests[$line][8];
 
-Foo::freedetailExcelOutput($headerData,$detailheader,$detailData);
+Foo::freeDetailExcelOutput($headerData,$detailheader,$detailData);

@@ -56,3 +56,40 @@ templates:
         unit: M                  # 単位
         unit_price: N            # 単価
         total_price: P           # 金額
+
+  estimate4:
+    file: templates/output_template4.xlsx
+    fields:
+      estimate_number: G2          #見積書番号
+      issue_date: G3               #発行日
+      issuer: F5                   # 発行者
+      person_in_charge: F6        # 担当者
+      customer_name: A2            # 顧客名
+      customer_representative: B4 # 顧客担当者
+    detail:
+      start_row: 15               # 明細データの開始行
+      columns:                   
+        item_name: A             # 項目
+        quantity: D              # 数量
+        unit: E                  # 単位
+        unit_price: F            # 単価
+        total_price: G           # 金額
+  
+  estimate5:
+    file: templates/output_template5.xlsx
+    fields:
+      estimate_number: J2          #見積書番号
+      issue_date: J3               #発行日
+      issuer: H5                   # 発行者
+      person_in_charge: I6        # 担当者
+      customer_name: A2            # 顧客名
+      customer_representative: B4 # 顧客担当者
+    detail:
+      start_row: 16               # 明細データの開始行
+      columns:
+        no: A                    # No.                   
+        item_name: B             # 項目
+        quantity: G              # 数量
+        unit: H                  # 単位
+        unit_price: I            # 単価
+        total_price: J           # 金額

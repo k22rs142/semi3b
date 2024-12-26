@@ -23,15 +23,12 @@ $templates = array_keys($config['templates']);
     <?php
     require 'testdata.php'; // テストデータ
     $line = $_POST['line'];
-
-    //foreach ($tests as $test) {
     echo '<h3>詳細データ</h3>';
     echo "<table border='1'>";
     for ($i = 1; $i < 8; $i++) {
         echo "<tr><th>" . $detaitem[$i] . "</th><td>" . $tests[$line][$i] . "</td></tr>";
     }
     echo '</table>';
-    //}
 
     echo "<h3>明細データ</h3>";
     echo "<table border='1'>";
